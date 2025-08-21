@@ -1,0 +1,15 @@
+D:\DEV\GeneratorCode\GeneratorCode\bin\Release\GeneratorCode.exe.config
+D:\DEV\GeneratorCode\GeneratorCode\bin\Release\GeneratorCode.exe
+D:\DEV\GeneratorCode\GeneratorCode\bin\Release\GeneratorCode.pdb
+D:\DEV\GeneratorCode\GeneratorCode\bin\Release\zxing.xml
+D:\DEV\GeneratorCode\GeneratorCode\bin\Release\zxing.presentation.xml
+D:\DEV\GeneratorCode\GeneratorCode\obj\Release\GeneratorCode.csproj.AssemblyReference.cache
+D:\DEV\GeneratorCode\GeneratorCode\obj\Release\QRDataMatrix.MainForm.resources
+D:\DEV\GeneratorCode\GeneratorCode\obj\Release\GeneratorCode.Properties.Resources.resources
+D:\DEV\GeneratorCode\GeneratorCode\obj\Release\GeneratorCode.csproj.GenerateResource.cache
+D:\DEV\GeneratorCode\GeneratorCode\obj\Release\GeneratorCode.csproj.CoreCompileInputs.cache
+D:\DEV\GeneratorCode\GeneratorCode\obj\Release\GeneratorCode.csproj.Fody.CopyLocal.cache
+D:\DEV\GeneratorCode\GeneratorCode\obj\Release\GeneratorCode.csproj.Fody.RuntimeCopyLocal.cache
+D:\DEV\GeneratorCode\GeneratorCode\obj\Release\Generato.474444AB.Up2Date
+D:\DEV\GeneratorCode\GeneratorCode\obj\Release\GeneratorCode.exe
+D:\DEV\GeneratorCode\GeneratorCode\obj\Release\GeneratorCode.pdb
