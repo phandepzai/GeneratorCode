@@ -29,17 +29,18 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.lblStatus = new System.Windows.Forms.Label();
             this.lblCopyright = new System.Windows.Forms.Label();
+            this.btnClear = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // inputBox
             // 
-            this.inputBox.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputBox.Location = new System.Drawing.Point(51, 8);
+            this.inputBox.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputBox.Location = new System.Drawing.Point(51, 11);
             this.inputBox.Multiline = true;
             this.inputBox.Name = "inputBox";
-            this.inputBox.Size = new System.Drawing.Size(475, 40);
+            this.inputBox.Size = new System.Drawing.Size(475, 34);
             this.inputBox.TabIndex = 0;
             this.inputBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -100,7 +101,7 @@
             // 
             // lblCode1
             // 
-            this.lblCode1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCode1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCode1.Location = new System.Drawing.Point(30, 307);
             this.lblCode1.Name = "lblCode1";
             this.lblCode1.Size = new System.Drawing.Size(200, 60);
@@ -109,7 +110,7 @@
             // 
             // lblCode2
             // 
-            this.lblCode2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCode2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCode2.Location = new System.Drawing.Point(351, 307);
             this.lblCode2.Name = "lblCode2";
             this.lblCode2.Size = new System.Drawing.Size(200, 60);
@@ -119,7 +120,7 @@
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(241, 370);
+            this.btnSave.Location = new System.Drawing.Point(242, 370);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(99, 30);
             this.btnSave.TabIndex = 8;
@@ -147,11 +148,24 @@
             this.lblCopyright.TabIndex = 0;
             this.lblCopyright.Text = "Copyright by Nông Văn Phấn";
             // 
+            // btnClear
+            // 
+            this.btnClear.BackColor = System.Drawing.Color.LightCoral;
+            this.btnClear.Location = new System.Drawing.Point(495, 14);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(27, 29);
+            this.btnClear.TabIndex = 0;
+            this.btnClear.Text = "X";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Visible = false;
+            this.btnClear.Click += new System.EventHandler(this.BtnClear_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(581, 421);
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.lblCopyright);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.btnSave);
@@ -189,5 +203,6 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.Label lblCopyright;
+        private System.Windows.Forms.Button btnClear;
     }
 }

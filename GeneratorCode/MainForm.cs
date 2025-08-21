@@ -36,6 +36,10 @@ namespace QRDataMatrix
             // Căn copyright khi load và resize
             this.Load += (s, e) => AlignCopyright();
             this.Resize += (s, e) => AlignCopyright();
+            inputBox.TextChanged += (s, e) => {
+                GenerateCodes();
+                btnClear.Visible = !string.IsNullOrEmpty(inputBox.Text.Trim());
+            };
         }
 
         private void AlignCopyright()
@@ -48,6 +52,11 @@ namespace QRDataMatrix
             }
         }
 
+        private void BtnClear_Click(object sender, EventArgs e)
+        {
+            inputBox.Clear();
+        }
+
 
         private void GenerateCodes()
         {
@@ -58,9 +67,15 @@ namespace QRDataMatrix
                 pictureBox2.Image = null;
                 lblCode1.Text = "";
                 lblCode2.Text = "";
-                return;
+                btnClear.Visible = false; // Ẩn nút khi không có dữ liệu
+                return; 
             }
-
+            else
+            {
+                btnClear.Visible = true; // Hiện nút khi có dữ liệu
+                                         // Căn chỉnh vị trí của nút
+                btnClear.Location = new System.Drawing.Point(inputBox.Right - 25, inputBox.Top + (inputBox.Height - btnClear.Height) / 2);
+            }
             if (radioQR.Checked)
             {
                 // Trả layout về 2 ô
